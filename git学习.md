@@ -214,6 +214,7 @@ git diff --cached 最后一次提交到版本库环境中文件和暂存区中�
 | Git  branch -v      | 查看分支                     |
 | Git checkout 分支名 | 切换分支                     |
 | Git merge 分支名    | 把指定的分支合并到当前分支上 |
+| git branch –d name  | 删除分支                     |
 
 合并分支
 
@@ -237,4 +238,16 @@ git diff --cached 最后一次提交到版本库环境中文件和暂存区中�
 
 
 
+2.添加远程库
+
+![image-20230406145537050](git学习.assets/image-20230406145537050.png)
+
  
+
+![image-20230406145641092](git学习.assets/image-20230406145641092.png)
+
+3.推送
+
+因为远程库是空的，所以我们在第一次推送 master 分支时，要加上 `-u` 参数，Git不但会把本地的 master 分支内容推送的远程新的 master 分支，还会把本地的 master 分支和远程的 master 分支关联起来，在以后的推送或者拉取时就可以简化命令。
+
+![image-20230406145720906](git学习.assets/image-20230406145720906.png)
